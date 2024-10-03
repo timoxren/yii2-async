@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace vxm\async\event;
+namespace timoxren\async\event;
 
 /**
  * An event triggered when task executed success.

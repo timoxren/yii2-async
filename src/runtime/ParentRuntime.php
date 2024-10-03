@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace vxm\async\runtime;
+namespace timoxren\async\runtime;
 
 use Spatie\Async\Pool;
 use Spatie\Async\Process\ParallelProcess;
@@ -26,7 +26,7 @@ class ParentRuntime extends BaseParentRuntime
     /**
      * @inheritDoc
      */
-    public static function createProcess($task): Runnable
+    public static function createProcess($task, ?int $outputLength = null, ?string $binary = 'php', ?int $max_input_size = 100000): Runnable
     {
         if (!self::$isInitialised) {
             self::init();
@@ -38,13 +38,13 @@ class ParentRuntime extends BaseParentRuntime
             return SynchronousProcess::create($task, self::getId());
         }
 
-        $process = new Process(implode(' ', [
+        $process = new Process([
             'exec php',
             self::$childProcessScript,
             self::$autoloader,
             self::encodeTask($task),
             $appConfigFile
-        ]));
+        ]);
 
         return ParallelProcess::create($process, self::getId());
     }

@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "vxm\\async\\": "/src"
+            "timoxren\\async\\": "/src"
         }
     },
     "repositories": [
@@ -32,6 +32,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     }
 }

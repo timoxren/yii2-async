@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace vxm\async;
+namespace timoxren\async;
 
 use yii\base\BaseObject;
 
