@@ -15,10 +15,10 @@ use yii\base\Component;
 
 use Spatie\Async\Process\Runnable;
 
-use vxm\async\event\Event;
-use vxm\async\event\ErrorEvent;
-use vxm\async\event\SuccessEvent;
-use vxm\async\runtime\ParentRuntime;
+use timoxren\async\event\Event;
+use timoxren\async\event\ErrorEvent;
+use timoxren\async\event\SuccessEvent;
+use timoxren\async\runtime\ParentRuntime;
 
 /**
  * Support run code async. To use it, you just config it to your application components in configure file:
