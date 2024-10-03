@@ -13,7 +13,7 @@ An extension provide an easy way to run code asynchronous and parallel base on [
 
 ## Requirements
 
-* [PHP >= 7.1](http://php.net)
+* [PHP >= 7.1 || >8.0](http://php.net)
 * [yiisoft/yii2 >= 2.0.13](https://github.com/yiisoft/yii2)
 
 ## Installation
