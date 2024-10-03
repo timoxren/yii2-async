@@ -1,5 +1,5 @@
 {
-    "name": "vxm/yii2-async",
+    "name": "timoxren/yii2-async",
     "description": "Provide an easy way to run code asynchronously for Yii2 application",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","yii2-async","async","php-async"],
